@@ -117,19 +117,50 @@
                             <p class="text-white">Take a look at them
                             </p>
                         </div>
+                        <div class="col-lg-6 col-md-12 mb-5 mt-5" id="angebotKurse2">
+                            <div class="contentKursPic">
+                                <img src="snowboard.jpg" class="img-fluid ">
+                            </div>
+                            <h4 class="my-4 mb-1">Shop them</h4>
+                            <p class="text-white">Lets buy this product
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-5 mt-5" id="angebotKurse2">
+                            <div class="contentKursPic">
+                                <img src="snowboard2.jpg" class="img-fluid ">
+                            </div>
+                            <h4 class="my-4 mb-1">Snowboards</h4>
+                            <p class="text-white">Snowing</p>
+                        </div>
+                    </div>
 
 
 
 
+                    <!-- </div> -->
 
-                        <!-- </div> -->
-
-                        <!-- <div class="EffectContainer"> -->
-                        <div class="test" data-tilt>
+                    <!-- <div class="EffectContainer"> -->
+                    <div class="row mb-5">
+                        <div class="col-lg-4 test" data-tilt data-tilt-scale="1.1">
 
                         </div>
-                        <!-- </div> -->
+                        <div class="col-lg-4 ">
+
+                        </div>
+
+                        <div class="col-lg-4 test " data-tilt data-tilt-scale="1.1">
+
+                        </div>
                     </div>
+
+                    <div class="row mt-5">
+                        <div class="col-lg-12 test" data-tilt data-tilt-scale="1.15">
+
+                        </div>
+
+                    </div>
+                    <!-- </div> -->
+
                 </section>
 
 
@@ -239,6 +270,14 @@
             });
             //It also supports NodeList
             VanillaTilt.init(document.querySelectorAll(".test"));
+        </script>
+
+        <script type="text/javascript">
+            //It also supports NodeList
+            VanillaTilt.init(document.querySelectorAll("#angebotKurse2"), {
+                max: 50,
+                speed: 1000
+            });
         </script>
 
 </body>

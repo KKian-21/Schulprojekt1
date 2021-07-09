@@ -138,7 +138,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="username text-white">Username</label>
+                        <label for="username" class="text-white">Username</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">@</span>
@@ -151,7 +151,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="email text-white">Email <span class="text-muted">(Optional)</span></label>
+                        <label for="email" class="text-white">Email <span class="text-white">(Optional)</span></label>
                         <input type="email" class="form-control" id="email" placeholder="you@example.com">
                         <div class="invalid-feedback">
                             Please enter a valid email address for shipping updates.
@@ -159,7 +159,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="address text-white">Address</label>
+                        <label for="address text-white">Adresse</label>
                         <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
                         <div class="invalid-feedback">
                             Please enter your shipping address.
@@ -167,13 +167,14 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="address2text-white">Address 2 <span class="text-muted">(Optional)</span></label>
+                        <label for="address2" class="text-white">Adresse 2 <span
+                                class="text-white">(Optional)</span></label>
                         <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
                     </div>
 
                     <div class="row">
                         <div class="col-md-5 mb-3">
-                            <label for="country text-white">Country</label>
+                            <label for="country" class="text-white">Land</label>
                             <select class="custom-select d-block w-100" id="country" required>
                                 <option value="">Choose...</option>
                                 <option>United States</option>
@@ -183,7 +184,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label for="state">State</label>
+                            <label for="state" class="text-white">Bundesland</label>
                             <select class="custom-select d-block w-100" id="state" required>
                                 <option value="">Choose...</option>
                                 <option>California</option>
@@ -193,7 +194,7 @@
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <label for="zip">Zip</label>
+                            <label for="plz" class="text-white">PLZ</label>
                             <input type="text" class="form-control" id="zip" placeholder="" required>
                             <div class="invalid-feedback">
                                 Zip code required.
@@ -203,61 +204,63 @@
                     <hr class="mb-4">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="same-address">
-                        <label class="custom-control-label" for="same-address">Shipping address is the same as my
+                        <label class="custom-control-label text-white" for="same-address">Shipping address is
+                            the same as my
                             billing address</label>
                     </div>
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="save-info">
-                        <label class="custom-control-label" for="save-info">Save this information for next time</label>
+                        <label class="custom-control-label text-white" for="save-info">Save this information for
+                            next time</label>
                     </div>
                     <hr class="mb-4">
 
-                    <h4 class="mb-3">Payment</h4>
+                    <h4 class="mb-3 text-white">Payment</h4>
 
                     <div class="d-block my-3">
                         <div class="custom-control custom-radio">
                             <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked
                                 required>
-                            <label class="custom-control-label" for="credit">Credit card</label>
+                            <label class="custom-control-label text-white" for="credit">Credit card</label>
                         </div>
                         <div class="custom-control custom-radio">
                             <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-                            <label class="custom-control-label" for="debit">Debit card</label>
+                            <label class="custom-control-label text-white" for="debit">Debit card</label>
                         </div>
                         <div class="custom-control custom-radio">
                             <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-                            <label class="custom-control-label" for="paypal">PayPal</label>
+                            <label class="custom-control-label text-white" for="paypal">PayPal</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="cc-name">Name on card</label>
+                            <label for="cc-name" class="text-white">Name on card</label>
                             <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                            <small class="text-muted">Full name as displayed on card</small>
-                            <div class="invalid-feedback">
+                            <small class="text-muted text-white">Full name as displayed on card</small>
+                            <div class="invalid-feedback text-white">
                                 Name on card is required
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="cc-number">Credit card number</label>
+                            <label for="cc-number" class="text-white">Credit card number</label>
                             <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                            <div class="invalid-feedback">
+                            <div class="invalid-feedback text-white">
                                 Credit card number is required
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3 mb-3">
-                            <label for="cc-expiration">Expiration</label>
+                            <label for="cc-expiration" class="text-white">Expiration</label>
                             <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
                             <div class="invalid-feedback">
                                 Expiration date required
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <label for="cc-cvv">CVV</label>
+                            <label for="cc-cvv" class="text-white">CVV</label>
                             <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                            <div class="invalid-feedback">
+                            <div class="invalid-feedback text-white">
                                 Security code required
                             </div>
                         </div>
