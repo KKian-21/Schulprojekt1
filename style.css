@@ -409,6 +409,7 @@ h4 {
     width: 400px;
     background-image: linear-gradient(120deg, #c0261b, #530606);
     text-align: center;
+    transform-style: preserve-3d;
 }
 
 .innerPara {
@@ -419,6 +420,21 @@ h4 {
     top: 25%;
     left: 25%;
     box-shadow: 0 0 50px 0;
+    transform: translateZ(20px);
+}
+
+.textPara {
+    position: relative;
+    height: 30px;
+    width: 80px;
+    top: 55%;
+    font-size: larger;
+    background: rgba( 95, 211, 211, 0.30);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 8.5px);
+    -webkit-backdrop-filter: blur( 8.5px);
+    border-radius: 3px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
 }
 
 .mb-6 {
